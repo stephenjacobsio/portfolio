@@ -1,0 +1,112 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Custom Navbar */
+.custom-navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.custom-navbar a.navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.custom-navbar ul {
+    list-style: none;
+    display: flex;
+}
+.custom-navbar ul li {
+    margin-left: 20px;
+}
+.custom-navbar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+.custom-navbar ul li a:hover {
+    color: #0277bd;
+}
+
+/* Hero Section */
+.hero-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-text {
+    text-align: center;
+    color: white;
+}
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #0277bd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Icons */
+.icon {
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .custom-navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .custom-navbar ul li {
+        margin: 10px 0;
+    }
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Back-to-Top Button */
+#back-to-top {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0277bd;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#back-to-top:hover {
+    background-color: #035d8c;
+}
